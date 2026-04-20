@@ -1,25 +1,18 @@
-multi-live-pro/
-│── app.py
-│
-├── core/
-│   ├── ffmpeg_multi.py
-│   ├── streamer.py
-│   ├── overlay.py
-│
-├── platforms/
-│   ├── facebook.py
-│   ├── youtube.py
-│   ├── tiktok.py
-│
-├── utils/
-│   ├── logger.py
-│   ├── file_manager.py
-│
-├── config/
-│   ├── settings.py
-│
-├── assets/
-│   ├── videos/
-│   ├── cta/
+# 🎬 Video Watermark Pro
 
+A simple batch video processing tool using Python + FFmpeg + Streamlit.
 
+## Features
+- Upload multiple videos
+- Add 2 animated watermarks
+- Auto scaling (5–15%)
+- Batch processing
+- Download results
+
+## Requirements
+- Python 3.x
+- FFmpeg installed
+
+## Run locally
+pip install -r requirements.txt
+streamlit run app.py
