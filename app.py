@@ -1,6 +1,8 @@
 import streamlit as st
 from processor import process_videos
+import os
 
+os.makedirs(os.path.dirname(wm1_path), exist_ok=True)
 st.set_page_config(page_title="Video Watermark Pro", layout="centered")
 
 st.title("🎬 Video Watermark Pro")
