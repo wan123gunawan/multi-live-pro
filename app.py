@@ -17,7 +17,10 @@ videos = st.file_uploader(
 
 wm1 = st.file_uploader("Watermark 1 (PNG)", type=["png"])
 wm2 = st.file_uploader("Watermark 2 (PNG)", type=["png"])
+wm1_path = f"temp/{wm1.name}"
 
+with open(wm1_path, "wb") as f:
+    f.write(wm1.read())
 if st.button("🚀 Start Processing"):
 
     if not videos or not wm1 or not wm2:
